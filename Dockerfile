@@ -5,7 +5,7 @@ FROM alpine:3.10.0
 
 # aws-cli
 RUN apk --no-cache update && \
-    apk --no-cache add bash python py-pip py-setuptools ca-certificates curl less groff && \
+    apk --no-cache add bash python py-pip py-setuptools ca-certificates curl less groff zip && \
     pip --no-cache-dir install awscli && \
     rm -rf /var/cache/apk/*
 
